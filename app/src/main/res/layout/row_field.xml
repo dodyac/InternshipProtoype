@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/field"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawablePadding="@dimen/padding_parent_small"
+    android:textColor="@color/textSecondary"
+    android:textSize="@dimen/text_small"
+    app:drawableStartCompat="@drawable/bg_circle_small"
+    app:drawableTint="@color/green"/>

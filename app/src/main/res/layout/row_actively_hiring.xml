@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/cardViewStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_parent">
+
+        <com.acxdev.commonFunction.widget.ShimmerImage
+            android:id="@+id/image"
+            android:layout_width="@dimen/margin_50dp"
+            android:layout_height="@dimen/margin_50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.acxdev.commonFunction.widget.ShimmerText
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_parent_small"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toTopOf="@id/image" />
+
+        <com.acxdev.commonFunction.widget.ShimmerText
+            android:id="@+id/company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_4dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image" />
+
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="@dimen/margin_20dp"
+            android:layout_height="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/padding_parent_small"
+            android:src="@drawable/icons8_marker"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:tint="@color/green" />
+
+        <com.acxdev.commonFunction.widget.ShimmerText
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_parent_small"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintBottom_toBottomOf="@id/locationIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/locationIcon"
+            app:layout_constraintTop_toTopOf="@id/locationIcon" />
+
+        <ImageView
+            android:id="@+id/timeIcon"
+            android:layout_width="@dimen/margin_20dp"
+            android:layout_height="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/padding_parent_small"
+            android:src="@drawable/icons8_calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/locationIcon"
+            app:tint="@color/green" />
+
+        <com.acxdev.commonFunction.widget.ShimmerText
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_parent_small"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintBottom_toBottomOf="@id/timeIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/timeIcon"
+            app:layout_constraintTop_toTopOf="@id/timeIcon" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/apply"
+            style="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_40dp"
+            android:paddingStart="@dimen/margin_50dp"
+            android:paddingEnd="@dimen/margin_50dp"
+            android:text="@string/apply"
+            android:textSize="@dimen/text_extra_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timeIcon" />
+
+        <com.acxdev.commonFunction.widget.ShimmerText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/applicants"
+            android:textSize="@dimen/text_extra_small"
+            android:layout_marginStart="@dimen/padding_parent_small"
+            app:layout_constraintBottom_toBottomOf="@id/apply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/apply"
+            app:layout_constraintTop_toTopOf="@id/apply"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

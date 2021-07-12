@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">InternshipPrototype</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutCompany">About Company</string>
+    <string name="descriptions">Descriptions</string>
+    <string name="applyInternship">Apply Internship</string>
+    <string name="lets_go">Let\'s Go</string>
+    <string name="apply">Apply</string>
+    <string name="benefit">Benefit:</string>
+    <string name="requirements">Requirements:</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="name">Julia Syalia</string>
+    <string name="find_internship">Find Internship..</string>
+    <string name="actively_hiring">Actively Hiring</string>
+    <string name="see_all">See All</string>
+    <string name="new_internship">New Internship</string>
+    <string name="on_boarding_1">Challenge yourself towards your future dream job and get bunch of benefits</string>
+    <string-array name="requirement_gojek">
+        <item>Proven to ever work as a UI/UX Designer or similar role.</item>
+        <item>Understanding about Visual design and UX Design and Have a strong design taste.</item>
+        <item>Up-to-date knowledge of design software like Adobe Illustrator and Photoshop.</item>
+    </string-array>
+    <string-array name="benefit_gojek">
+        <item>$200 Monthly Allowance and bonus.</item>
+        <item>Professional mentors.</item>
+    </string-array>
+    <string-array name="requirement_microsoft">
+        <item>Applicants musthave advanced to candidacy (or the equivalent of completing qualification exams) in their PhD program by the time they start their internship (approximately May 2021). Unfortunately, there are no opportunities for Master’s students or early PhD students at this time.</item>
+    </string-array>
+    <string-array name="benefit_microsoft">
+        <item>Highly competitive salary.</item>
+        <item>Travel to/from internship location from your university location (including the intern and all eligible dependents).</item>
+        <item>Housing costs: interns can select one of two housing options.</item>
+        <item>Local transportation allowance for commuting.</item>
+        <item>Fully furnished corporate housing covered by Microsoft, or</item>
+        <item>a lump sum for finding and securing your own housing</item>
+    </string-array>
+</resources>

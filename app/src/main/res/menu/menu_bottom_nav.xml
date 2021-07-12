@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icons8_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/navigation_applied"
+        android:icon="@drawable/icons8_clipboard"
+        android:title="Applied"/>
+    <item
+        android:id="@+id/navigation_accepted"
+        android:icon="@drawable/icons8_inspection"
+        android:title="Accepted"/>
+    <item
+        android:id="@+id/navigation_group"
+        android:icon="@drawable/icons8_guardian"
+        android:title="Group"/>
+</menu>

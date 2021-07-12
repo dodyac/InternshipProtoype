@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_parent"
+    tools:context=".ActivityDetail">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="@dimen/margin_40dp"
+        android:layout_height="@dimen/margin_40dp"
+        android:background="@drawable/bg_rounded_small"
+        android:backgroundTint="@color/cardBackground"
+        android:src="@drawable/icons8_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/primary" />
+
+    <ImageButton
+        android:id="@+id/fav"
+        android:layout_width="@dimen/margin_40dp"
+        android:layout_height="@dimen/margin_40dp"
+        android:background="@drawable/bg_rounded_small"
+        android:backgroundTint="@color/cardBackground"
+        android:src="@drawable/icons8_hearts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.acxdev.commonFunction.widget.ShimmerImage
+        android:id="@+id/image"
+        android:layout_width="@dimen/photo_size_large"
+        android:layout_height="@dimen/photo_size_large"
+        android:layout_marginTop="@dimen/padding_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back" />
+
+    <com.acxdev.commonFunction.widget.ShimmerText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_parent"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/text_extra_large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.acxdev.commonFunction.widget.ShimmerText
+        android:id="@+id/duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding_parent"
+        android:gravity="end"
+        app:layout_constraintBottom_toBottomOf="@id/locationIcon"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/locationIcon" />
+
+    <ImageView
+        android:id="@+id/locationIcon"
+        android:layout_width="@dimen/margin_20dp"
+        android:layout_height="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/padding_parent"
+        android:src="@drawable/icons8_marker"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:tint="@color/green" />
+
+    <com.acxdev.commonFunction.widget.ShimmerText
+        android:id="@+id/location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_parent_small"
+        app:layout_constraintBottom_toBottomOf="@id/locationIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/locationIcon"
+        app:layout_constraintTop_toTopOf="@id/locationIcon" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tabLayoutCard"
+        style="@style/cardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_parent"
+        app:layout_constraintTop_toBottomOf="@id/locationIcon">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/selector_tab_layout"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/tabLayout_style"
+            app:tabTextColor="@color/primary" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/viewPager"
+        android:paddingTop="@dimen/padding_parent_small"
+        android:paddingBottom="@dimen/padding_parent_small"
+        app:layout_constraintBottom_toTopOf="@id/apply"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutCard" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/apply"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/applyInternship"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
